@@ -1,0 +1,8 @@
+# cp .envrc.example .envrc && direnv allow
+
+# sccache が無い環境で RUSTC_WRAPPER を設定するとビルドが失敗するため、存在確認してから使う
+if has sccache; then
+  export RUSTC_WRAPPER=sccache
+fi
+
+export RUST_BACKTRACE=1

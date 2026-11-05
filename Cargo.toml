@@ -1,0 +1,15 @@
+[package]
+name = "barge"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+[profile.dev]
+# 完全な debug info はリンクと増分ビルドを遅くする。backtrace の行番号はこれで残る
+debug = "line-tables-only"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+strip = true
