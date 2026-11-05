@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/rust,linux,macos,vim
-# Edit at https://www.toptal.com/developers/gitignore?templates=rust,linux,macos,vim
+# Created by https://www.toptal.com/developers/gitignore/api/rust,linux,macos,vim,visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=rust,linux,macos,vim,visualstudiocode
 
 ### Linux ###
 *~
@@ -81,12 +81,26 @@ tags
 # Persistent undo
 [._]*.un~
 
-# End of https://www.toptal.com/developers/gitignore/api/rust,linux,macos,vim
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
 
+# Local History for Visual Studio Code
+.history/
 
-# Added by cargo
+# Built Visual Studio Code Extensions
+*.vsix
 
-/target
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
+# End of https://www.toptal.com/developers/gitignore/api/rust,linux,macos,vim,visualstudiocode
 
 ### direnv ###
 .envrc
