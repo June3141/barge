@@ -87,3 +87,7 @@ tags
 # Added by cargo
 
 /target
+
+### direnv ###
+.envrc
+.direnv/
